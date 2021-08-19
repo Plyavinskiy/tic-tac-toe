@@ -29,42 +29,42 @@ class TicTacToe {
         const fieldLength = this.field3x3.length;
 
         for (let i = 0; i < fieldLength; i++) {
-            const isHorizontalLineHasTheSameSymbols = (
+            const isHorizontalLineHasIdenticalSymbols = (
                 (this.field3x3[i][0] === this.field3x3[i][1]) &&
                 (this.field3x3[i][1] === this.field3x3[i][2])
             );
 
-            if (isHorizontalLineHasTheSameSymbols) {
+            if (isHorizontalLineHasIdenticalSymbols) {
                 return this.field3x3[i][0];
             }
         }
 
         for (let i = 0; i < fieldLength; i++) {
-            const isVerticalLineHasTheSameSymbols = (
+            const isVerticalLineHasIdenticalSymbols = (
                 (this.field3x3[0][i] === this.field3x3[1][i]) &&
                 (this.field3x3[1][i] === this.field3x3[2][i])
             );
 
-            if (isVerticalLineHasTheSameSymbols) {
+            if (isVerticalLineHasIdenticalSymbols) {
                 return this.field3x3[0][i];
             }
         }
 
-        const isFirstDiagonalHasTheSameSymbols = (
+        const isFirstDiagonalHasIdenticalSymbols = (
             (this.field3x3[0][0] === this.field3x3[1][1]) &&
             (this.field3x3[1][1] === this.field3x3[2][2])
         );
 
-        if (isFirstDiagonalHasTheSameSymbols) {
+        if (isFirstDiagonalHasIdenticalSymbols) {
             return this.field3x3[0][0];
         }
 
-        const isSecondDiagonalHasTheSameSymbols = (
+        const isSecondDiagonalHasIdenticalSymbols = (
             (this.field3x3[0][2] === this.field3x3[1][1]) &&
             (this.field3x3[1][1] === this.field3x3[2][0])
         );
 
-        if (isSecondDiagonalHasTheSameSymbols) {
+        if (isSecondDiagonalHasIdenticalSymbols) {
             return this.field3x3[0][2];
         }
 
